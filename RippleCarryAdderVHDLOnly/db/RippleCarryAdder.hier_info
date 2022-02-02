@@ -1,0 +1,61 @@
+|RippleCarryAdder
+A[0] => FullAdder:FA0.A
+A[1] => FullAdder:FA1.A
+A[2] => FullAdder:FA2.A
+A[3] => FullAdder:FA3.A
+B[0] => FullAdder:FA0.B
+B[1] => FullAdder:FA1.B
+B[2] => FullAdder:FA2.B
+B[3] => FullAdder:FA3.B
+CI => FullAdder:FA0.CI
+SUM[0] <= FullAdder:FA0.SUM
+SUM[1] <= FullAdder:FA1.SUM
+SUM[2] <= FullAdder:FA2.SUM
+SUM[3] <= FullAdder:FA3.SUM
+CO <= FullAdder:FA3.CO
+
+
+|RippleCarryAdder|FullAdder:FA0
+CI => R.IN1
+CI => SUM.IN1
+A => G.IN0
+A => P.IN0
+B => G.IN1
+B => P.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarryAdder|FullAdder:FA1
+CI => R.IN1
+CI => SUM.IN1
+A => G.IN0
+A => P.IN0
+B => G.IN1
+B => P.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarryAdder|FullAdder:FA2
+CI => R.IN1
+CI => SUM.IN1
+A => G.IN0
+A => P.IN0
+B => G.IN1
+B => P.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarryAdder|FullAdder:FA3
+CI => R.IN1
+CI => SUM.IN1
+A => G.IN0
+A => P.IN0
+B => G.IN1
+B => P.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+
+
